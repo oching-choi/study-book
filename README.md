@@ -6,9 +6,9 @@
 
 
 ## 목차🚪
-- 1_HTML
-- 2_CSS
-- 3_Javascript
+- [1_HTML](https://github.com/oching-choi/study-book/blob/main/1_HTML/html.md)
+- [2_CSS](https://github.com/oching-choi/study-book/blob/main/2_CSS/css.md)
+- [3_Javascript](https://github.com/oching-choi/study-book/blob/main/3_Javascript/javascript.md) 
 - 4_Typescript
 - 5_React
 - 6_Next.js
