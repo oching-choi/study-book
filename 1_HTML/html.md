@@ -2,30 +2,32 @@
 HTML(Hypertext Markup Language)은 우리가 보는 웹페이지의 구조를 나타내는 언어이다.<br>
 웹 안에서 서로를 연결할 수 있는 링크(Hypertext)들을 구성(Markup)허는 언어(Language)라는 뜻! <br>
 HTML은 웹 컨텐츠의 의미와 구조를 정의할 때 사용되는 기본적인 개념이며, 웹을 이루는 가장 기초적인 구성 요소이다. <br>
-( 우리가 보는 웹 컨텐츠 = HTML:구조 + CSS:디자인 + Javascript:동작/기능 ) <br> 
+💡우리가 보는 웹 컨텐츠 = HTML(구조) + CSS(디자인) + Javascript(동작/기능) <br> 
 
 그럼 어떻게 웹 컨텐츠를 구성한다는걸까? <br> 
 HTML은 각 웹 컨텐츠 요소(element)들을 Tag라는 것을 통해 구체화시킨다. <br> 
 Tag는 `<head></head>`, `<body></body>`, `<p></p>` 등등이 있고 <br> 
 외에도 많은 종류가 있으니 자세한 의미와 용법은 [MDN공식문서](https://developer.mozilla.org/ko/docs/Web/HTML/Element)를 추천한다. <br> <br> 
-Tag는 기본적으로 여는태그, 내용(content), 닫는태그 의 형태로 구성된다. <br>
-예를 들면, `<p>p태그는 paragraph, 즉 하나의 문단을 만들 때 쓰입니다.</p>` 이런식이다. <br> 
-
+Tag는 기본적으로 여는태그, 내용(content), 닫는태그 의 형태로 구성된다.
+```html
+<p>p태그는 paragraph, 즉 하나의 문단을 만들 때 쓰입니다.</p>
+```
 하지만, 모든 예외가 있는법! 닫는 태그가 없는 태그들도 있다. <br> 
 `<br>` `<img>` `<meta>` `<link>` `<input>` `<hr>`의 경우에는 닫는 태그 없이 아래의 예시와 같이 사용한다. <br>
 ```html
 <img src="이미지경로.jpg">
 <input value="">
 ```
-이처럼 내부 값인 content가 따로 없고 태그 자체의 속성(attribute)으로 값을 받아 사용하기에 닫는 태그가 불필요하다. <br><br><br>
+이처럼 내부 값인 content가 따로 없고 태그 자체의 속성(attribute)으로 값을 받아 사용하기에 닫는 태그가 불필요하다. <br>
+💡속성(attribute)란? 위에서 `src`나 `value` 와 같이 태그안에서 어떠한 속성으로 쓸 수 있는 것을 말한다. <br><br>
 
 
 
 ## 블록요소(Block level) vs 인라인요소(Inline level)
 
 HTML의 요소는 기본적으로 블록요소, 인라인요소 두가지로 나뉜다. <br>
-⭐️ 실제로 화면에 요소들을 배치할 떄 중요한 개념이니 잘 익혀두자!
-- <b>블록요소(Block lever)</b><br>
+💡실제로 화면에 요소들을 배치할 떄 중요한 개념이니 잘 익혀두자!
+- <b>블록요소(Block level)</b><br>
 말 그대로 웹 페이지에 하나의 블록으로서 존재한다. 블록이기에 가로 한줄을 꽉 채워 한자리를 차지하고, 때문에 block 요소의 이전요소와 다음요소는 줄바꿈이 일어난다. 하나의 덩어리 개념으로 웹 페이지 내의 구조를 잡을 때 사용한다. 큰 덩어리이기에 인라인요소 안에 존재할 수 없고, 블록 요소가 인라인요소를 품을 수 있는 더 큰 개념이라고 생각하면 된다. <br>
 ![Group 12 (2)](https://github.com/oching-choi/study-book/assets/102008712/4d707831-00ef-4953-bdeb-b6fccd0ccfa9)
 
